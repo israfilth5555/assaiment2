@@ -1,14 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body>
-    <img src="./assets/headphone.png" alt="Image 1">
 
+<body>
+    <header class="flex justify-between items-center max-w-[1600px] mx-auto w-full bg-[#412567]">
+        <div class="ml-[200px] text-2xl font-bold">
+            <span class="text-white">Tech</span>
+            <span
+                class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">Wave</span>
+        </div>
+        <nav class="my-[36.5px] hidden gap-[32px] text-sm font-medium text-gray-300 md:flex">
+            <a href="#">About</a>
+            <a href="#">Episodes</a>
+            <a href="#">Host</a>
+        </nav>
+        <div class="my-[24px] mr-[200px]">
+            <a href="#"
+                class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 shadow-lg shadow-pink-500/20">
+                Subscribe
+                <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+                    class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5l6 6m0 0l-6 6m6-6H3" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section
+            class="max-w-[1600px] bg-[url('./assets/hero-bg.png')] bg-cover bg-center mx-auto h-[600px] flex items-center justify-center">
+            <div class="absolute top-[123px] left-1/3.5-translate-x-1 -translate-y-1 h-[762px]">
+                <img src="./assets/hero-circle.png" alt="">
+            </div>
+
+            <div class="absolute top-1/3.5 left-1/3.5 -translate-x-1 -translate-y-1/2">
+                <img src="./assets/microphone.png" alt="">
+            </div>
+            <div class="mt-[240px] text-5xl font-bold text-white text-center">
+                <h1>TechWave</h1>
+            </div>
+            <br />
+            <div class="absolute text-white mt-[320px]">
+                <p>
+                    Your daily dose of tech insights, productivity hacks, and personal
+                    growth
+                </p>
+            </div>
+            <div class="absolute mt-[420px] flex gap-[30px] text-nowrap">
+                <div
+                    class="btn flex gap-[10px] w-[201px] p-[12px] bg-linear-to-r/increasing from-indigo-500 to-teal-400 rounded-[25px]">
+                    <img src="./assets/spotify.png" alt="" /><button class="text-white">
+                        Listen on Spotify
+                    </button>
+                </div>
+                <div class="btn flex gap-[10px] border border-[#00ff88] w-[147px] p-[12px] rounded-[25px]">
+                    <img src="./assets/message.png" alt="" /><button class="text-white">
+                        Subscribe
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section class=" about-section   bg-[#1A0B2E] max-w-[1600px] mx-auto h-[646px]">
+            <div class="text-white text-center max-w-[1200px] mx-auto pt-[50px] p-[200px]">
+                <h2 class="text-5xl font-bold mb-[20px]">About the Podcast</h2>
+                <p class="text-center mt-[10px]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                    We break down complex topics into digestible insights, explore productivity strategies that actually
+                    work,
+                    and share stories of personal growth from industry leaders.</p>
+                   
+                    <br>
+                    <p class="text-center mt-[2.2px]">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>    
+            </div>
+                <hr class="mt-[-150px] max-w-[1200px] mx-auto border-t border-[#1a1818]">  
+            
+            <div class="flex justify-center gap-[100px] mt-[50px]">
+            <div>
+                <h1 class=" text-[#00ff88] text-4xl font-black p-[20px]  ">150K+</h1>
+                <p class="text-white text-center">Monthly Listeners</p>
+            </div>
+            <div>
+                <h1 class=" text-[#00ff88] text-4xl font-black p-[20px]">200+</h1>
+                <p class="text-white text-center">Episodes Published</p>
+            </div>
+            <div>
+                <h1 class=" text-[#00ff88] text-4xl font-black p-[20px]  ">4.9★</h1>
+                <p class="text-white text-center">Average Rating </p>
+            </div>
+            <div>
+                <h1 class=" text-[#00ff88] text-4xl font-black p-[20px]">50+</h1>
+                <p class="text-white text-center">Industry Experts</p>
+            </div>
+            </div>
+        </section>
+        <!--rating section -->
+        <section class="max-w-[1600px] " >
+
+        </section>
+        <section class=" max-w-[1600px] h-[1122px] bg-[#1A0B2E] mx-auto">
+            <h1 class="text-white text-4xl font-bold text-center pt-[40px]">Why Choose TechWave</h1>
+
+            <!-- grid section -->
+             <div class="max-w-[1200px] mx-auto grid grid-cols-3 gap-[30px] mt-[50px]">
+                <div class="bg-[#230E3D] p-[20px] rounded-[15px] row-span-2">
+                    <img src="./assets/headphone.png" alt="" class="mb-[20px]">
+                    <h2 class="text-[#ffffff] text-2xl font-bold mb-[20px]">Expert Insights</h2>
+                    <p class="text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="bg-[#230E3D] p-[20px] rounded-[15px] col-span-2">
+                    <img src="./assets/headphone.png" alt="" class="mb-[20px]">
+                    <h2 class="text-[#ffffff] text-2xl font-bold mb-[20px]">Expert Insights</h2>
+                    <p class="text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="bg-[#230E3D] p-[20px] rounded-[15px] col-span-2">
+                    <img src="./assets/headphone.png" alt="" class="mb-[20px]">
+                    <h2 class="text-[#ffffff] text-2xl font-bold mb-[20px]">Expert Insights</h2>
+                    <p class="text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="bg-[#230E3D] p-[20px] rounded-[15px] col-span-2">
+                    <img src="./assets/headphone.png" alt="" class="mb-[20px]">
+                    <h2 class="text-[#ffffff] text-2xl font-bold mb-[20px]">Expert Insights</h2>
+                    <p class="text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="bg-[#230E3D] p-[20px] rounded-[15px]">
+                    <img src="./assets/headphone.png" alt="" class="mb-[20px]">
+                    <h2 class="text-[#ffffff] text-2xl font-bold mb-[20px]">Expert Insights</h2>
+                    <p class="text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+               
+             </div>
+
+        </section>
+    </main>
 </body>
+
 </html>
