@@ -1,4 +1,22 @@
 /* @import "tailwindcss" */
 body {
+<<<<<<< HEAD
  /* background-color: #412567; */
+=======
+    max-width: 1600px;
+ /* background-color: #412567; */
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    background-color: linear-gradient(to right, #412567, #230E3D);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.CARD{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+>>>>>>> 0a6c9f54e9638eb7f5fcb4726ecd1b741cbf6c15
 }
